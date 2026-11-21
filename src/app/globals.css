@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import "../styles/base.css";
+@import "../styles/layout.css";
+@import "../styles/home.css";
+@import "../styles/products.css";
+@import "../styles/cart.css";
+@import "../styles/pages.css";
+@import "../styles/sell.css";
+/* Backend-free mock authentication */
+.mock-auth { display: grid; min-height: 65vh; place-items: center; padding-block: 4rem; }
+.mock-auth-card { display: grid; gap: 1rem; width: min(100%, 30rem); }
+.mock-auth-card h1 { margin: 0; font-size: clamp(1.75rem, 4vw, 2.5rem); }
+.mock-account-list, .mock-account-list form { display: grid; gap: .65rem; }
+.mock-account-button { align-items: center; background: #fff; border: 1px solid var(--line, #d8dde6); border-radius: .85rem; cursor: pointer; display: grid; font: inherit; gap: .8rem; grid-template-columns: auto 1fr auto; padding: .8rem; text-align: left; width: 100%; }
+.mock-account-button:hover { border-color: var(--ink, #17243a); transform: translateY(-1px); }
+.mock-account-button > span:nth-child(2) { display: grid; gap: .15rem; }
+.mock-account-button small { color: var(--muted, #667085); }
+.mock-avatar { align-items: center; background: #17243a; border: 0; border-radius: 50%; color: #fff; cursor: pointer; display: inline-flex; font-size: .72rem; font-weight: 800; height: 2rem; justify-content: center; list-style: none; width: 2rem; }
+.mock-user-menu { position: relative; }
+.mock-user-menu summary::-webkit-details-marker { display: none; }
+.mock-user-popover { background: #fff; border: 1px solid var(--line, #d8dde6); border-radius: .85rem; box-shadow: 0 1rem 2rem rgb(23 36 58 / .14); display: grid; gap: .3rem; min-width: 14rem; padding: .9rem; position: absolute; right: 0; top: calc(100% + .6rem); z-index: 30; }
+.mock-user-popover small { color: var(--muted, #667085); }
+.mock-user-popover button { background: none; border: 0; color: inherit; cursor: pointer; font: inherit; padding: .5rem 0 0; text-align: left; }
+.header-actions form { margin: 0; }
